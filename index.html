@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
 	<title>Abelito</title>
 </head>
-<body>
+<body ng-controller="AppController">
+
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #770000;">
 		<div class="container">
 		  <a class="navbar-brand" href="#">Abel</a>
@@ -39,6 +42,45 @@
 		  </p>
 		</div>
 	</div>
-	
+
+	<!-- Alerts -->
+	<div class="container">
+
+		<h1>Alerts</h1>	
+		<button type="button" class="btn btn-success" ng-click="showSuccessAlertClick()">Mostrar Exito</button>
+		<button type="button" class="btn btn-warning" ng-click="showWarningAlertClick()">Mostrar Advertencia</button>
+		<button type="button" class="btn btn-danger" ng-click="showErrorAlertClick()">Mostrar Error</button>
+		<button type="button" class="btn btn-dark" ng-click="hideAlertClick()">Esconder Alertas</button>
+		<br><br>
+		<div ng-show="showSuccessAlert" class="alert alert-success" role="alert">
+		  This is a dark alert—check it out!
+		  <h4>Test</h4>
+		</div>
+
+		<div ng-show="showWarningAlert" class="alert alert-warning" role="alert">
+		  This is a dark alert—check it out!
+		  <hr>
+
+		</div>
+
+		<div ng-show="showErrorAlert" class="alert alert-danger" role="alert">
+		  This is a dark alert—check it out!
+		  <h1>Test</h1>
+		</div>	
+	</div>
+	<!-- Fin Alerts -->
+
+
+	<!-- Badges -->
+	<div class="container">
+
+		<h1>Badges</h1>
+		<button class="btn" ng-click="clickBadge()">
+			Blah
+				<span class="badge badge-secondary">{{badgeCounter}}</span>
+		</button>
+	</div>
+	<!-- Fin Badges -->
+
 </body>
 </html>
