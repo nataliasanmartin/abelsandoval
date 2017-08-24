@@ -26,6 +26,9 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Nosotros</a>
 		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="http://getbootstrap.com/docs/4.0/components/alerts/">Bootstrap</a>
+		      </li>
 		    </ul>
 		  </div>
 		</div>
@@ -45,7 +48,6 @@
 
 	<!-- Alerts -->
 	<div class="container">
-
 		<h1>Alerts</h1>	
 		<button type="button" class="btn btn-success" ng-click="showSuccessAlertClick()">Mostrar Exito</button>
 		<button type="button" class="btn btn-warning" ng-click="showWarningAlertClick()">Mostrar Advertencia</button>
@@ -73,7 +75,6 @@
 
 	<!-- Badges -->
 	<div class="container">
-
 		<h1>Badges</h1>
 		<button class="btn" ng-click="clickBadge()">
 			Blah
@@ -81,6 +82,45 @@
 		</button>
 	</div>
 	<!-- Fin Badges -->
+
+
+	<!-- Breadcrumb -->
+	<div class="container" style="margin-top: 20px;">
+		<h1>Breadcrumb</h1>
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item"><a href="#">Home</a></li>
+		  <li class="breadcrumb-item"><a href="#">Library</a></li>
+		  <li class="breadcrumb-item active">Data</li>
+		</ol>
+	</div>
+	<!-- Fin Breadcrumb -->
+
+	<!-- Button Toggle -->
+	<div class="container">
+		<h1>Button Toggle</h1>
+		<button type="button" class="btn btn-primary" data-toggle="button" data-target="#buttonToggle">
+		  Single toggle
+		</button>
+		<button class="btn btn-primary active" id="buttonToggle" aria-pressed="true">
+		  Target
+		</button>
+	</div>
+	<!-- Fin Button Toggle -->
+
+	<!-- Button Group -->
+		<div class="container" style="margin-top: 20px;">
+			<h1>Button Group</h1>
+			<div class="btn-group" role="group" aria-label="Basic example button group">
+				<button type="button" class="btn btn-primary">Primero</button>
+				<button type="button" class="btn btn-secondary">Segundo</button>
+				<button type="button" class="btn btn-success">Tercero</button>
+				<button type="button" class="btn btn-dark">Cuarto</button>
+				<button type="button" class="btn btn-light">Quinto</button>
+				<button type="button" class="btn btn-warning">Sexto</button>
+				<button type="button" class="btn btn-danger" ng-click="clickBadge()">Septimo</button>
+			</div>
+		</div>
+	<!-- Fin Button Group -->
 
 </body>
 </html>
