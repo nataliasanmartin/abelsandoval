@@ -2,6 +2,7 @@
 <html ng-app="app">
 <head>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -111,7 +112,7 @@
 		<div class="container" style="margin-top: 20px;">
 			<h1>Button Group</h1>
 			<div class="btn-group" role="group" aria-label="Basic example button group">
-				<button type="button" class="btn btn-primary">Primero</button>
+				<a href="#idBebe" class="btn btn-primary" ng-click="showBebeClick()">Bebe</a>
 				<button type="button" class="btn btn-secondary">Segundo</button>
 				<button type="button" class="btn btn-success">Tercero</button>
 				<button type="button" class="btn btn-dark">Cuarto</button>
@@ -121,6 +122,12 @@
 			</div>
 		</div>
 	<!-- Fin Button Group -->
+
+	<!-- Firebase Test -->
+	<div class="container imageContainer" ng-show="showBebe" id="idBebe">
+		<img width="200px" src="css/images/bebe.png" class="firebase-effect">
+	</div>
+	<!-- Fin Firebase Test -->
 
 </body>
 </html>

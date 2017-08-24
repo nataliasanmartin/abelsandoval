@@ -42,4 +42,11 @@ app.controller('AppController', function AppController($scope) {
   }
 
   //Fin Badge 
+
+  //Bebe
+  $scope.showBebe = false;
+  $scope.showBebeClick = function(){
+    $scope.showBebe = !$scope.showBebe;
+  }
+  //Fin Bebe
 });
