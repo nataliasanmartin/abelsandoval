@@ -55,3 +55,16 @@
 .imageContainer{
 	margin-top:30px;
 }
+
+.carousel-container{
+    max-height: 300px;
+}
+
+#mainCarousel .carousel-inner .carousel-item{
+    max-height: 300px;
+}
+
+
+#mainCarousel .carousel-inner .carousel-item img{
+    display: block;
+}
